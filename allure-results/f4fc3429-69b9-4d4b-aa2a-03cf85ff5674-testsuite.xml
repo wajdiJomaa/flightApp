@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662556571086' stop='1662556667254'>
+    <name>turnaroundmovements</name>
+    <title>turnaroundmovements</title>
+    <test-cases>
+        <test-case start='1662556571086' status='passed' stop='1662556623837'>
+            <name>TC_064</name>
+            <title>TC_064</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1662556623989' status='passed' stop='1662556667254'>
+            <name>TC_065</name>
+            <title>TC_065</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
