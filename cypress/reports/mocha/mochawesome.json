@@ -1,0 +1,131 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-09-21T12:46:50.180Z",
+    "end": "2022-09-21T12:47:22.858Z",
+    "duration": 32678,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9d81c818-be49-4d88-a9ad-21303349616c",
+      "title": "",
+      "fullFile": "cypress/integration/FDM/FDM_topLeftIcon.cy.js",
+      "file": "cypress/integration/FDM/FDM_topLeftIcon.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b6a1d5d3-bc59-4121-8348-4ec2fed909aa",
+          "title": "FDM",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC_001",
+              "fullTitle": "FDM TC_001",
+              "timedOut": null,
+              "duration": 7915,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const fdm = new _FDM.FDM();\ncy.contains(\"FDM\").click({\n  force: true\n});\nfdm.getTopLeftIcon().should(\"be.visible\");",
+              "err": {},
+              "uuid": "1e437f9e-6b69-42a2-b655-f03800c41878",
+              "parentUUID": "b6a1d5d3-bc59-4121-8348-4ec2fed909aa",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_002",
+              "fullTitle": "FDM TC_002",
+              "timedOut": null,
+              "duration": 10898,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/FDM_topLeftIcon.cy.js/FDM -- TC_002 (failed).png\"",
+              "code": "cy.contains(\"FDM\").click({\n  force: true\n});\nconst fdm = new _FDM.FDM(); // fdm.getTopLeftIcon().click()        \nfdm.getTopLeftIconOption(\"Insert Movement\").should(\"be.visible\");\nfdm.getTopLeftIconOption(\"Copy Movement\").should(\"be.visible\");\nfdm.getTopLeftIconOption(\"Delete Movements\").should(\"be.visible\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 8000ms: Expected to find element: `.Grid_extended_menu`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 8000ms: Expected to find element: `.Grid_extended_menu`, but never found it.\n    at FDM.getTopLeftIconOption (http://185.114.89.129:31080/__cypress/tests?p=cypress/integration/FDM/FDM_topLeftIcon.cy.js:147:15)\n    at Context.eval (http://185.114.89.129:31080/__cypress/tests?p=cypress/integration/FDM/FDM_topLeftIcon.cy.js:116:9)",
+                "diff": null
+              },
+              "uuid": "10b2a75b-0b26-49b8-a161-97e9cfc60594",
+              "parentUUID": "b6a1d5d3-bc59-4121-8348-4ec2fed909aa",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1e437f9e-6b69-42a2-b655-f03800c41878"
+          ],
+          "failures": [
+            "10b2a75b-0b26-49b8-a161-97e9cfc60594"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 18813,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

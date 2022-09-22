@@ -15,7 +15,7 @@ describe("FDM", ()=>{
 
         const fdm = new FDM()
         
-        fdm.getTopLeftIcon().click()        
+        // fdm.getTopLeftIcon().click()        
         
         fdm.getTopLeftIconOption("Insert Movement").should("be.visible")
         fdm.getTopLeftIconOption("Copy Movement").should("be.visible")
